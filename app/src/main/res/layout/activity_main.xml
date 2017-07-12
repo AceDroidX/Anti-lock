@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.github.wangxuxin.anti_lock.MainActivity">
+
+    <TextView
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:id="@+id/textView"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"/>
+    <TextView
+            android:text="程序状态："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/textProgramState"
+            android:visibility="gone"/>
+    <Button
+            android:text="test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:id="@+id/buttonTest" android:visibility="gone"/>
+    <Button
+            android:text="关于"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:id="@+id/buttonAbout"/>
+    <Button
+            android:text="@string/button_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_above="@+id/buttonAbout"
+            android:layout_centerHorizontal="true" android:id="@+id/button_help"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView" android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout_isAuthorize">
+        <TextView
+                android:text="是否授权："
+                android:layout_height="wrap_content"
+                android:id="@+id/textIsAuthorize"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                android:layout_below="@+id/textView" android:layout_centerHorizontal="true" android:layout_weight="1"
+                android:layout_width="wrap_content"/>
+        <Button
+                android:text="Button"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMain" android:layout_below="@+id/textView" android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"/>
+    </LinearLayout>
+    <Switch
+            android:text="@string/switch_program"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_program"
+            android:layout_below="@+id/linearLayout_isAuthorize" android:layout_alignParentStart="true"
+            android:visibility="gone"/>
+    <Switch
+            android:text="@string/switch_debug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_below="@+id/switch_program"
+            android:layout_alignParentStart="true" android:id="@+id/switch_debug"/>
+</RelativeLayout>

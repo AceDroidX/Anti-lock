@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.github.wangxuxin.anti_lock.MainActivity" android:clickable="false">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="By wxx"
+            android:id="@+id/textView2" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/scrollView"
+            android:layout_centerHorizontal="true" android:id="@+id/linearLayout_welcome">
+        <Button
+                android:text="@string/button_disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_disagree" android:layout_weight="1"/>
+        <Button
+                android:text="@string/button_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_agree" android:layout_weight="1"
+                android:textAllCaps="false"/>
+    </LinearLayout>
+    <Button
+            android:text="@string/button_Iknow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/linearLayout_welcome"
+            android:layout_centerHorizontal="true" android:id="@+id/button_Iknow" android:textAllCaps="false"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_centerVertical="true" android:id="@+id/scrollView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="@string/text_welcome2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:paddingBottom="20dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="@string/text_welcome3"
+                    android:id="@+id/textView_version"
+                    android:paddingBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+            android:text="@string/text_welcome1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" android:paddingBottom="20dp"
+            android:layout_above="@+id/scrollView" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

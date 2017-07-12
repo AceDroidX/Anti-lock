@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Anti-lock</string>
+    <string name="text_welcome1">欢迎使用Anti-lock防锁工具</string>
+    <string name="text_welcome2">食用方法：\n当手机屏幕锁错误尝试次数等于或超过5次时 把手机手动重启 密码即可自动改成233333</string>
+    <string name="text_welcome3">注意：\n请先确认是否允许应用的所有权限(设备管理器、自启动、锁屏显示、后台运行等)\n否则无法生效\n为了以防万一 请先自行测试是否生效\n由此软件造成的各种损失\n作者概不负责(´_ゝ`)</string>
+    <string name="button_disagree">我不服(#`Д´)ﾉ</string>
+    <string name="button_agree">我资慈d(`･∀･)b</string>
+    <string name="button_Iknow">我知道了(*ﾟ∀ﾟ*)</string>
+    <string name="button_help">帮助</string>
+    <string name="switch_program">程序开关</string>
+    <string name="switch_debug">开发者模式</string>
+</resources>
